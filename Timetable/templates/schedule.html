@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block body %}
+<table class="table table-stripped table-bordered table-dark mt-5" style="background-color: black;">
+    {%for i in Timetable%}
+    <tr class="text-primary">
+      <td>{{i.name}}</td>
+      <td>{{i.course}}</td>
+      <td>{{i.scheduleTask}}</td>
+      <td>{{i.date}}</td>
+      <td>{{i.regno}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+{% endblock %}
